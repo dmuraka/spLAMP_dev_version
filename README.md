@@ -1,4 +1,4 @@
-# spLAMP (development_version): Spatial modeling via Local Aggregate Multiscale Process (LAMP)
+# spLAMP (dev version): Spatial modeling via Local Aggregate Multiscale Process (LAMP)
 R codes for spatial prediction and uncertainty modeling using the Local Aggregate Multiscale Process (LAMP), a fast, validation-based spatial process model:
 - lamp_functions.R: Main and internal functions
 - sample_code.R   : Sample code for spatial prediction using meuse data
