@@ -1,6 +1,9 @@
 
-#install.packages("sf")
+#### Load R functions
+#install.packages(c("sf", "devtools"))
 library(sf)
+library(devtools)
+source_url("https://raw.githubusercontent.com/dmuraka/spLAMP_dev_version/main/lamp_functions.R")
 
 #### Data at sample sites
 data(meuse)
@@ -50,6 +53,7 @@ plot(pdat_sf[,c("pred")]   , nbreaks=20, pch=15, axes=TRUE, key.pos = 1)
 plot(pdat_sf[,c("pred_sd")], nbreaks=20, pch=15, axes=TRUE, key.pos = 1)
 plot(pdat_sf[,c("pred_len95")], nbreaks=20, pch=15, axes=TRUE, key.pos = 1)
 plot(pdat_sf[,c("pred_l95","pred_u95")], nbreaks=20, pch=15, axes=TRUE, key.pos = 1)
+
 
 
 
